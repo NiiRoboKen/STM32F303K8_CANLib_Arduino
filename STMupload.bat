@@ -32,6 +32,7 @@ cd /d "C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin"
 
 STM32_Programmer_CLI.exe -c port=SWD -w "%PROJECT_ROOT%.pio\build\%BOARD%\firmware.elf" -rst
 
+rem Enterキーを押してループ
 set a=""
 set /p a=
 goto loop
