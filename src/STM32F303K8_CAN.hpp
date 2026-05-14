@@ -438,13 +438,8 @@ inline bool STM32CAN::CANInit(long bitrate, CANPinTypes SelectPin){
     delay(1);
   }
   
-  /*if (can1) {
-    Serial.println("CAN1 initialize ok");
-  } else {
-    Serial.println("CAN1 initialize fail!!");
-    return false;
-  }*/
-  return true;
+  
+  return !!can1;
 }
 
 
