@@ -3,7 +3,7 @@
 /*
 参考プログラム
 https://github.com/nopnop2002/Arduino-STM32-CAN/blob/master/stm32f303/stm32f303.ino
-をclassにまとめます
+をclassにまとめました。
 
 多少いじくりました（引数の抽象化、非同期送信、class化）
 元のコメントは一部翻訳済み
@@ -15,6 +15,11 @@ CANメッセージのビットレートに指定できる数値の一覧
 250000
 500000
 100000
+
+CANのTx,Rxに使用するピンを設定します。
+上のほうにあるenum CANPinTypesによって、このようなピンを設定できます。
+PA11_PA12,
+PB8_PB9
 */
 
 #pragma once
